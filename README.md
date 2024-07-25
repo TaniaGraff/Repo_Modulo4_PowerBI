@@ -1,4 +1,5 @@
 # Módulo 4
-**Equipo desarrollo**: Tania Graff y Sandra Moreno
+## Arbolando Barcelona. Análisis de las zonas verdes de Barcelona para encontrar donde ubicar el próximo parque urbano de la ciudad.
+**Equipo desarrollo**: Tania Graff
 
 *Herramienta visualización:* Power BI Desktop
