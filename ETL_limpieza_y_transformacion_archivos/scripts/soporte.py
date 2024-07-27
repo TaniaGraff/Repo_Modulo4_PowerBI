@@ -148,7 +148,7 @@ def renombrar_columnas_renta(df):
 """
 def renombrar_distrito_renta(df, columna):
     df[columna] = df[columna].replace({
-        'Sarrià-St. Gervasi': 'Sarrià - Sant Gervasi'
+        'Sarrià-St. Gervasi': 'Sarrià-Sant Gervasi'
     })
     return df
 
