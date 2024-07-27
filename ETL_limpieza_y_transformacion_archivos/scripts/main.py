@@ -152,7 +152,7 @@ soporte.renombrar_columnas_distritos(df_distritos)
 print(soporte.primeras_filas(df_distritos))
 print('.....................................................\n')
 
-#Llamo a la función para guardar el DF de la renta per capita de BCN como un archivo .csv limpio.
+#Llamo a la función para guardar el DF de los distritos como un archivo .csv limpio.
 soporte.guardar_df(df_distritos, 'distritos_barcelona')
 
 
@@ -184,5 +184,57 @@ soporte.normalizar_y_renombrar_parques_y_jardines(df_parques_y_jardines)
 #Llamo a la función para eliminar los duplicados de la columna register id.
 soporte.eliminar_duplicados(df_parques_y_jardines, 'register_id')
 
-#Llamo a la función para guardar el DF de la renta per capita de BCN como un archivo .csv limpio.
+#Llamo a la función para guardar el DF de parques y jardines como un archivo .csv limpio.
 soporte.guardar_df(df_parques_y_jardines, 'parques_y_jardines_barcelona')
+
+
+print('__________________________________________________________________________________________')
+
+print('________  APERTURA CSV, EXPLORACIÓN Y LIMPIEZA DATAFRAME CÓDIGO CONTAMINANTES   __________')
+
+#Llamo a la función de leer el csv del código de contaminantes.
+df_contaminantes = soporte.leer_csv('../data/input_data/qualitat_aire_contaminants.csv')
+df_contaminantes
+print('Las 5 primeras filas del DataFrame de CONTAMINANTES son:\n')
+print(df_contaminantes.head())
+print('.....................................................')
+
+#Llamo a la función para ver la info del csv del código de contaminantes.
+print('La INFORMACIÓN del DataFrame de CONTAMINANTES es:\n')
+soporte.info_df(df_contaminantes)
+print('.....................................................')
+
+#Llamo a la función para renombrar columnas.
+soporte.renombrar_columnas_contaminantes(df_contaminantes)
+
+#Llamo a la función para guardar el DF de los contaminantes de BCN como un archivo .csv limpio.
+soporte.guardar_df(df_contaminantes, 'contaminantes_barcelona')
+
+
+print('__________________________________________________________________________________________')
+
+print('________  APERTURA CSV, EXPLORACIÓN Y LIMPIEZA DATAFRAME CALIDAD AIRE BCN   __________')
+
+#Llamo a la función de leer el csv de la contaminación.
+df_contaminacion = soporte.leer_csv('../data/input_data/2021_qualitat_aire_estacions.csv')
+df_contaminacion
+print('Las 5 primeras filas del DataFrame de CONTAMINACIÓN son:\n')
+print(df_contaminacion.head())
+print('.....................................................')
+
+#Llamo a la función para ver la info del csv de la contaminación.
+print('La INFORMACIÓN del DataFrame de CONTAMINACIÓN es:\n')
+soporte.info_df(df_contaminacion)
+print('.....................................................')
+
+#Llamo a la función para eliminar columnas contaminación.
+soporte.borrar_columnas_contaminacion(df_contaminacion)
+
+#Llamo a la función para igualar nombres columnas contaminación.
+soporte.renombrar_columnas_contaminacion(df_contaminacion)
+
+#Llamo a la función para cambiar el nombre a los distritos.
+soporte.renombrar_distrito_contaminacion(df_contaminacion, 'nom_districte')
+
+#Llamo a la función para guardar el DF de la contaminación de BCN como un archivo .csv limpio.
+soporte.guardar_df(df_contaminacion, 'contaminacion_barcelona')

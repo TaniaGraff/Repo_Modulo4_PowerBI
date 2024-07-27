@@ -1,0 +1,51 @@
+estacio,codi_districte,nom_districte,codi_barri,nom_barri,clas_1,clas_2,codi_contaminant
+50,1,Ciutat Vella,4,"Sant Pere, Santa Caterina i la Ribera",Urbana,Fons,8
+50,1,Ciutat Vella,4,"Sant Pere, Santa Caterina i la Ribera",Urbana,Fons,14
+50,1,Ciutat Vella,4,"Sant Pere, Santa Caterina i la Ribera",Urbana,Fons,7
+50,1,Ciutat Vella,4,"Sant Pere, Santa Caterina i la Ribera",Urbana,Fons,12
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,8
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,14
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,10
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,1
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,6
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,7
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,12
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,22
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,99
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,996
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,997
+43,5,Eixample,9,la Nova Esquerra de l'Eixample,Urbana,Trànsit,998
+44,6,Gràcia,31,la Vila de Gracia,Urbana,Trànsit,8
+44,6,Gràcia,31,la Vila de Gracia,Urbana,Trànsit,14
+44,6,Gràcia,31,la Vila de Gracia,Urbana,Trànsit,10
+44,6,Gràcia,31,la Vila de Gracia,Urbana,Trànsit,1
+44,6,Gràcia,31,la Vila de Gracia,Urbana,Trànsit,6
+44,6,Gràcia,31,la Vila de Gracia,Urbana,Trànsit,7
+44,6,Gràcia,31,la Vila de Gracia,Urbana,Trànsit,12
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,8
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,14
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,10
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,1
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,6
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,7
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,9
+57,4,Les Corts,21,Pedralbes,Urbana,Fons,12
+4,10,Sant Martí,68,el Poblenou,Urbana,Fons,8
+4,10,Sant Martí,68,el Poblenou,Urbana,Fons,10
+4,10,Sant Martí,68,el Poblenou,Urbana,Fons,7
+4,10,Sant Martí,68,el Poblenou,Urbana,Fons,12
+42,3,Sants-Montjuïc,18,Sants,Urbana,Fons,8
+42,3,Sants-Montjuïc,18,Sants,Urbana,Fons,7
+42,3,Sants-Montjuïc,18,Sants,Urbana,Fons,12
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,8
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,14
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,10
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,1
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,6
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,12
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,7
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,22
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,996
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,997
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,998
+54,7,Horta-Guinardó,41,la Vall d'Hebron,Urbana,Fons,999

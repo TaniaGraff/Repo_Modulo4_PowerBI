@@ -144,7 +144,7 @@ def renombrar_columnas_renta(df):
     }
     df.rename(columns=columnas_a_renombrar_renta, inplace=True)
 
-"""Creo función para cambiar el nombre de uno de los distritos
+"""Creo función para cambiar el nombre de uno de los distritos.
 """
 def renombrar_distrito_renta(df, columna):
     df[columna] = df[columna].replace({
@@ -223,3 +223,34 @@ def eliminar_duplicados(df, columna):
     df.drop_duplicates(subset=columna, inplace=True)
     
 
+""""""""""""""""""""""""""""""
+"""Creo función para igualar nombres columnas contaminantes.
+"""
+def renombrar_columnas_contaminantes(df):
+    columnas_a_renombrar_contaminantes = {
+        'Codi_Contaminant': 'codi_contaminant', 'Desc_Contaminant':'desc_contaminant', 'Unitats':'unitats'
+    }
+    df.rename(columns=columnas_a_renombrar_contaminantes, inplace=True)
+
+
+""""""""""""""""""""""""""""""
+"""Creo función para eliminar columnas contaminación.
+"""
+columnas_a_borrar_contaminacion = ['nom_cabina', 'codi_dtes', 'zqa', 'codi_eoi', 'Longitud', 'Latitud', 'ubicacio']
+def borrar_columnas_contaminacion(df):
+    return df.drop(columns=columnas_a_borrar_contaminacion, inplace=True)
+
+"""Creo función para igualar nombres columnas contaminación.
+"""
+def renombrar_columnas_contaminacion(df):
+    columnas_a_renombrar_contaminacion = {
+        'Estacio': 'estacio', 'Codi_districte':'codi_districte', 'Nom_districte':'nom_districte', 'Codi_barri':'codi_barri', 'Nom_barri':'nom_barri', 'Clas_1':'clas_1', 'Clas_2':'clas_2', 
+        'Codi_Contaminant':'codi_contaminant'}
+    df.rename(columns=columnas_a_renombrar_contaminacion, inplace=True)
+
+"""Creo función para cambiar el nombre de varios distritos.
+"""
+def renombrar_distrito_contaminacion(df, columna):
+    df[columna] = df[columna].replace({
+        'Gracia': 'Gràcia', 'Sant Marti':'Sant Martí', 'Sants-Montjuic':'Sants-Montjuïc', 'Horta-Guinardo':'Horta-Guinardó'})
+    return df
