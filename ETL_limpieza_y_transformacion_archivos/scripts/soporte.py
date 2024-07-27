@@ -152,3 +152,69 @@ def normalizar_y_renombrar_renta(df):
     for columna in columnas_a_normalizar_renta:
         # Aplicar str.capitalize() directamente
         df[columna] = df[columna].str.title()
+
+
+
+""""""""""""""""""""""""""""""
+
+"""Creo función para igualar nombres columnas DF Distritos.
+"""
+def renombrar_columnas_distritos(df):
+    columnas_a_renombrar_renta = {
+        'Codi_Districte': 'codi_districte'
+    }
+    df.rename(columns=columnas_a_renombrar_renta, inplace=True)
+
+
+""""""""""""""""""""""""""""""
+
+"""Creo funciones para abrir y leer el csv de PARQUES Y JARDINES, teniendo en cuenta la codificación que tiene.
+"""
+import chardet
+
+def detectar_codificacion(ruta_archivo):
+    with open(ruta_archivo, 'rb') as f:
+        result = chardet.detect(f.read())
+    return result['encoding']
+
+def leer_csv(ruta_archivo):
+    encoding = detectar_codificacion(ruta_archivo)
+    df = pd.read_csv(ruta_archivo, encoding=encoding, sep=',', on_bad_lines='skip')
+    
+    return df
+
+"""Creo función para limpiar el DF de las columnas y filas nulas que ha podido generar tras la apertura.
+"""
+def limpiar_dataframe(df):
+    df = df.dropna(axis=1, how='all') 
+    df = df.dropna(axis=0, how='all')
+    return df
+
+
+"""Creo función para borrar columnas del DF Parques y Jardines.
+"""
+columnas_a_borrar_parques_y_jardines = ['institution_id', 'institution_name', 'modified', 'addresses_start_street_number', 'addresses_end_street_number', 'addresses_main_address',
+                           'values_id', 'values_attribute_id', 'values_category', 'values_attribute_name', 'values_value', 'values_outstanding',
+                            'values_description']
+def borrar_columnas_parques_y_jardines(df):
+    return df.drop(columns=columnas_a_borrar_parques_y_jardines, inplace=True)
+
+"""Creo función para igualar mayúsculas y minúsculas valores en diferentes columnas.
+"""
+def normalizar_y_renombrar_parques_y_jardines(df):
+    columnas_a_normalizar_parques_y_jardines = ['addresses_road_name', 'addresses_neighborhood_name', 'addresses_district_name', 'addresses_town']
+    
+    for columna in columnas_a_normalizar_parques_y_jardines:
+        # Aplicar str.capitalize() directamente
+        df[columna] = df[columna].str.title()
+
+"""Creo función para eliminar duplicados del ID de parques y jardines
+"""
+def eliminar_duplicados(df, columna):
+    print(f"Número de filas antes de eliminar duplicados: {df.shape[0]}")
+    df_sin_duplicados = df.drop_duplicates(subset=columna)
+    
+    # Mostrar el número de filas después de eliminar duplicados
+    print(f"Número de filas después de eliminar duplicados: {df_sin_duplicados.shape[0]}")
+    return df_sin_duplicados
+

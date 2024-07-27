@@ -88,6 +88,7 @@ print('.....................................................\n')
 #Llamo a la función para guardar el DF de la densidad de población como un archivo .csv limpio.
 soporte.guardar_df(df_densidad_poblacion, 'densidad_poblacion_barcelona')
 
+
 print('__________________________________________________________________________________________')
 
 print('________  APERTURA CSV, EXPLORACIÓN Y LIMPIEZA DATAFRAME RENTA PER CAPITA BCN   __________')
@@ -123,3 +124,64 @@ print('.....................................................\n')
 
 #Llamo a la función para guardar el DF de la renta per capita de BCN como un archivo .csv limpio.
 soporte.guardar_df(df_renta, 'renta_per_capita_barcelona')
+
+
+print('__________________________________________________________________________________________')
+
+print('________  APERTURA CSV, EXPLORACIÓN Y LIMPIEZA DATAFRAME DISTRITOS   __________')
+
+#Llamo a la función de leer el csv de distritos.
+df_distritos = soporte.leer_csv('../data/input_data/BarcelonaCiutat_Districtes.csv')
+df_distritos
+print('Las 5 primeras filas del DataFrame de DISTRITOS son:\n')
+print(df_distritos.head())
+print('.....................................................')
+
+#Llamo a la función para ver la info del csv de la renta per capita.
+print('La INFORMACIÓN del DataFrame de DISTRITOS es:\n')
+soporte.info_df(df_distritos)
+print('.....................................................')
+
+#Llamo a la función para renombrar las columnas del DF de distritos.
+soporte.renombrar_columnas_distritos(df_distritos)
+
+#Llamo a la función para ver las cinco primeras filas del DF de distritos.
+print(soporte.primeras_filas(df_distritos))
+print('.....................................................\n')
+
+#Llamo a la función para guardar el DF de la renta per capita de BCN como un archivo .csv limpio.
+soporte.guardar_df(df_distritos, 'distritos_barcelona')
+
+
+print('__________________________________________________________________________________________')
+
+print('________  APERTURA CSV, EXPLORACIÓN Y LIMPIEZA DATAFRAME PARQUES Y JARDINES   __________')
+
+#Llamo a la función para leer el archivo csv de parques y jardines.
+df_parques_y_jardines_bruto = soporte.leer_csv('../data/input_data/opendatabcn_cultura_parcs-i-jardins.csv')
+
+#Llamo a la funciñon para el DF para organizar el contenido correctamente.
+df_parques_y_jardines= soporte.limpiar_dataframe(df_parques_y_jardines_bruto)
+
+#Llamo a la función para ver la info del csv de parques y jardines.
+print('La INFORMACIÓN del DataFrame de DISTRITOS es:\n')
+soporte.info_df(df_parques_y_jardines)
+print('.....................................................')
+
+#Llamo a la función para borrar columnas del DF de parques y jardines.
+soporte.borrar_columnas_parques_y_jardines(df_parques_y_jardines)
+
+#Llamo a la función para ver las cinco primeras filas del DF de parques y jardines.
+print(soporte.primeras_filas(df_parques_y_jardines))
+print('.....................................................\n')
+
+#Llamo a la función para igualar el texto de las columnas del DF de parques y jardines.
+soporte.normalizar_y_renombrar_parques_y_jardines(df_parques_y_jardines)
+print('Las 5 primeras filas del DataFrame de PARQUES Y JARDINES tras la normalización son:\n')
+
+#Llamo a la función para eliminar los duplicados de la columna register id.
+soporte.eliminar_duplicados(df_parques_y_jardines, 'register_id')
+print('.....................................................\n')
+
+#Llamo a la función para guardar el DF de la renta per capita de BCN como un archivo .csv limpio.
+soporte.guardar_df(df_parques_y_jardines, 'parques_y_jardines_barcelona')
