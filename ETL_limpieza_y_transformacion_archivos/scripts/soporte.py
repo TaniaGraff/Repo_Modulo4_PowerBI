@@ -211,10 +211,6 @@ def normalizar_y_renombrar_parques_y_jardines(df):
 """Creo función para eliminar duplicados del ID de parques y jardines
 """
 def eliminar_duplicados(df, columna):
-    print(f"Número de filas antes de eliminar duplicados: {df.shape[0]}")
-    df_sin_duplicados = df.drop_duplicates(subset=columna)
+    df.drop_duplicates(subset=columna, inplace=True)
     
-    # Mostrar el número de filas después de eliminar duplicados
-    print(f"Número de filas después de eliminar duplicados: {df_sin_duplicados.shape[0]}")
-    return df_sin_duplicados
 

@@ -177,11 +177,9 @@ print('.....................................................\n')
 
 #Llamo a la función para igualar el texto de las columnas del DF de parques y jardines.
 soporte.normalizar_y_renombrar_parques_y_jardines(df_parques_y_jardines)
-print('Las 5 primeras filas del DataFrame de PARQUES Y JARDINES tras la normalización son:\n')
 
 #Llamo a la función para eliminar los duplicados de la columna register id.
 soporte.eliminar_duplicados(df_parques_y_jardines, 'register_id')
-print('.....................................................\n')
 
 #Llamo a la función para guardar el DF de la renta per capita de BCN como un archivo .csv limpio.
 soporte.guardar_df(df_parques_y_jardines, 'parques_y_jardines_barcelona')
