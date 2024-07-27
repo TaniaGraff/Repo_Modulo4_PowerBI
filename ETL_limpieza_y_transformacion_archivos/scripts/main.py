@@ -118,6 +118,9 @@ print('.....................................................')
 #Llamo a la función para normalizar los valores de la columna nom_barri del DF de la renta per capita.
 soporte.normalizar_y_renombrar_renta(df_renta)
 
+#Llamo a la función para renombrar distrito DF renta.
+soporte.renombrar_distrito_renta(df_renta, 'nom_districte')
+
 #Llamo a la función para ver las cinco primeras filas del DF de la renta per capita.
 print(soporte.primeras_filas(df_renta))
 print('.....................................................\n')

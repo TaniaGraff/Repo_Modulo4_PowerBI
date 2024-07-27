@@ -144,6 +144,15 @@ def renombrar_columnas_renta(df):
     }
     df.rename(columns=columnas_a_renombrar_renta, inplace=True)
 
+"""Creo función para cambiar el nombre de uno de los distritos
+"""
+def renombrar_distrito_renta(df, columna):
+    df[columna] = df[columna].replace({
+        'Sarrià-St. Gervasi': 'Sarrià - Sant Gervasi'
+    })
+    return df
+
+
 """Creo función para igualar mayúsculas y minúsculas valores columna nom_barris
 """
 def normalizar_y_renombrar_renta(df):
