@@ -227,14 +227,15 @@ print('La INFORMACIÓN del DataFrame de CONTAMINACIÓN es:\n')
 soporte.info_df(df_contaminacion)
 print('.....................................................')
 
-#Llamo a la función para eliminar columnas contaminación.
-soporte.borrar_columnas_contaminacion(df_contaminacion)
-
 #Llamo a la función para igualar nombres columnas contaminación.
 soporte.renombrar_columnas_contaminacion(df_contaminacion)
 
 #Llamo a la función para cambiar el nombre a los distritos.
 soporte.renombrar_distrito_contaminacion(df_contaminacion, 'nom_districte')
 
-#Llamo a la función para guardar el DF de la contaminación de BCN como un archivo .csv limpio.
+#Llamo a la función para cambiar el código de un distrito.
+soporte.actualizar_eixample(df_contaminacion)
+print(df_contaminacion[['codi_districte', 'nom_districte']].head(10))
+
+#Llamo a la función para guardar el DF de contaminación como un archivo .csv limpio.
 soporte.guardar_df(df_contaminacion, 'contaminacion_barcelona')

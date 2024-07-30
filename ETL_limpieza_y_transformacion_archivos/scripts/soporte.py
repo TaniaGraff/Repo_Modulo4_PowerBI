@@ -234,18 +234,12 @@ def renombrar_columnas_contaminantes(df):
 
 
 """"""""""""""""""""""""""""""
-"""Creo función para eliminar columnas contaminación.
-"""
-columnas_a_borrar_contaminacion = ['nom_cabina', 'codi_dtes', 'zqa', 'codi_eoi', 'Longitud', 'Latitud', 'ubicacio']
-def borrar_columnas_contaminacion(df):
-    return df.drop(columns=columnas_a_borrar_contaminacion, inplace=True)
-
 """Creo función para igualar nombres columnas contaminación.
 """
 def renombrar_columnas_contaminacion(df):
     columnas_a_renombrar_contaminacion = {
         'Estacio': 'estacio', 'Codi_districte':'codi_districte', 'Nom_districte':'nom_districte', 'Codi_barri':'codi_barri', 'Nom_barri':'nom_barri', 'Clas_1':'clas_1', 'Clas_2':'clas_2', 
-        'Codi_Contaminant':'codi_contaminant'}
+        'Codi_Contaminant':'codi_contaminant', 'Longitud':'longitud', 'Latitud':'latitud',}
     df.rename(columns=columnas_a_renombrar_contaminacion, inplace=True)
 
 """Creo función para cambiar el nombre de varios distritos.
@@ -253,4 +247,16 @@ def renombrar_columnas_contaminacion(df):
 def renombrar_distrito_contaminacion(df, columna):
     df[columna] = df[columna].replace({
         'Gracia': 'Gràcia', 'Sant Marti':'Sant Martí', 'Sants-Montjuic':'Sants-Montjuïc', 'Horta-Guinardo':'Horta-Guinardó'})
+    return df
+
+"""Creo función para cambiar el código de varios distritos.
+"""
+
+def actualizar_eixample(df):
+    # Asegurarse de que la columna codi_districte sea del tipo correcto
+    df['codi_districte'] = pd.to_numeric(df['codi_districte'], errors='coerce').astype('Int64')
+
+    # Cambiar el valor de codi_districte y nom_districte para 'Eixample'
+    df.loc[df['nom_districte'] == 'Eixample', 'codi_districte'] = 2
+    
     return df

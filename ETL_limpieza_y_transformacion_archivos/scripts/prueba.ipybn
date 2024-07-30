@@ -1,0 +1,15 @@
+#Llamo a la función para eliminar columnas contaminación.
+soporte.borrar_columnas_contaminacion(df_contaminacion)
+
+#Llamo a la función para igualar nombres columnas contaminación.
+soporte.renombrar_columnas_contaminacion(df_contaminacion)
+
+#Llamo a la función para cambiar el nombre a los distritos.
+soporte.renombrar_distrito_contaminacion(df_contaminacion, 'nom_districte')
+
+#Llamo a la función para cambiar el código de los distritos.
+soporte.renombrar_codigo_distritos_contaminacion(df_contaminacion)
+
+print("Valores únicos en 'codi_districte':")
+print(df_contaminacion['codi_districte'].unique())
+print(df_contaminacion['nom_districte'].unique())
