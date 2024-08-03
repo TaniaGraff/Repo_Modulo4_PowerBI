@@ -4,7 +4,7 @@
 
 *Herramienta visualización:* Power BI Desktop
 
-El Ministerio para la Transición Ecológica y Reto Demográfico encargó la realización de un análisis preliminar de los espacios verdes de Barcelona para ubicar el próximo parque urbano de la ciudad. Para determinar cuál es el distrito más idóneo, se han analizado 4 variables: los espacios verdes, la renta per capita, la densidad de población y la contaminación de cada distrito. Los siete dataset analizados, se han obtenido del Open Data facilitado por el Ayuntamiento de Barcelona [Open Data Ajuntament de Barcelona](https://opendata-ajuntament.barcelona.cat/es/).
+El Ministerio para la Transición Ecológica y Reto Demográfico encargó la realización de un análisis preliminar de los espacios verdes de Barcelona para ubicar el próximo parque urbano de la ciudad. Para determinar cuál es el distrito más idóneo, se han analizado 4 variables: los espacios verdes, la renta per capita, la densidad de población y la contaminación de cada distrito. Los siete dataset explorados, se han obtenido del Open Data facilitado por el Ayuntamiento de Barcelona [Open Data Ajuntament de Barcelona](https://opendata-ajuntament.barcelona.cat/es/).
 
 ![imagen_portada_modulo](portada.png)
 
@@ -50,20 +50,72 @@ Este script procesará los datos descargados y generará archivos limpios y tran
 **3. Verifica los Archivos Procesados:**
 Revisa la carpeta `output_data` para asegurarte de que los archivos procesados se han generado correctamente. Estos archivos estarán listos para ser utilizados en Tableau para la creación del dashboard.
 
-## **FASE 2: Identificación de Objetivo**
+## **FASE 2: Identificación de Objetivos**
 
 ### **Objetivos**
 
-**1. Identificación de Ubicación:** Seleccionar el mejor distrito para ubicar el próximo parque urbano de la ciudad en base al análisis de los siguientes factores.
+**1. Identificación de la Ubicación:** Seleccionar el mejor distrito para ubicar el próximo parque urbano de la ciudad en base al análisis de los siguientes factores.
 
-**2. Análisis de Factores:** Evaluar cómo los distintos factores considerados en el análisis, influyen en el ranking de los distritos: 
+**2. Análisis de Factores:** Evaluar cómo los distintos factores considerados en el análisis, influyen a la hora de rankear los distritos: 
 
-- `Ladder Score` (Puntaje de Escalera): Mide el nivel general de felicidad de un país.
+- `Espacios verdes`: Cuantifica y clasifica la cantidad de espacios verdes con los que cuenta cada distrito.
 
-- `Logged GDP per Capita`: PIB per cápita ajustado, indicando la riqueza económica del país.
+- `Densidad de población`: Cuantifica la densidad de población de cada distrito.
 
-- `Social Support` (Apoyo Social): Mide la percepción de apoyo social en el país.
+- `Renta per Capita`: Cuantifica los ingresos promedio indicando la riqueza económica de cada distrito.
 
-- `Healthy Life Expectancy` (Expectativa de Vida Saludable): Mide la cantidad de años que se espera que una persona viva en buena salud.
+- `Contaminación`: Mide la cantidad de contaminantes registrados en cada distrito.
 
-- `Freedom to Make Life Choices` (Libertad para Tomar Decisiones en la Vida): Mide la percepción de libertad para tomar decisiones importantes en la vida.
+**3. Visualización de Datos:** Proporcionar visualizaciones claras y comprensibles para facilitar la toma de decisiones informadas y elegir la mejor ubicación para establecer el próximo parque urbano de la ciudad.
+
+**4. Concienciación:** Concienciar a los estamentos gubernamentales locales y las asociaciones vecinales de la necesidad de crear un nuevo parque urbano en la ciudad.
+
+### **Preguntas Clave:**
+
+1. Identificación de la Ubicación:
+- ¿Cuántos espacios verdes tiene Barcelona?
+- ¿Cómo se categorízan los espacios verdes de Barcelona?
+- ¿En qué distritos se concentran los espacios verdes de Barcelona?
+- ¿En qué distritos se concentran los parques de Barcelona?
+- ¿Los distritos que más parques concentran son los que tienen una mayor renta per capita?
+- ¿Los distritos que más parques concentran son los que más población concentran?
+- ¿Los distritos que más parques concentran son los que más contaminación acumulan?
+
+2. Recomendaciones
+Clasificar los distritos en función de las cuatro variables analizadas con tal de encontrar la mejor localización para ubicar el próximo parque urbano de la ciudad:
+- ¿Son los parques la tipología de espacio verde que más predomina en Barcelona?
+- ¿En qué distritos se concentran?
+- ¿Hay una relación clara entre los espacios verdes y la densidad de población?
+- ¿Hay una relación clara entre los parques y la densidad de población?
+- ¿Hay una relación clara entre los espacios verdes y la renta per capita?
+- ¿Hay una relación clara entre los parques y la renta per capita?
+- ¿Hay una relación clara entre los espacios verdes y los niveles de contaminación?
+
+Plantear alternativas a la creación de un parque urbano en caso de que su creación no fuera posible por la idiosincracia de la ciudad.
+
+## **FASE 3: Casos de Uso**
+### **Público Objetivo del Dashboard**
+El dashboard está dirigido a:
+
+**Administración Pública** para que puedan determinar el mejor distrito donde ubicar el próximo parque urbano de Barcelona, y dotar a la municipalidad del presupuesto necesario para ejecutar el proyecto.
+
+**Asociaciones Vecinales** para que puedan presionar a las administraciones gubernamentales de la necesidad de crear un nuevo parque urbano en la ciudad.
+
+### **Visualizaciones realizadas en Power BI**
+
+El dashboard incluye varias visualizaciones clave para facilitar el análisis y la interpretación de los datos.
+**Mapa de formas** para ranquear los distritos en función de cada variable analizada.
+
+![mapa-formas-distritos](mapa-formas-distritos.png)
+
+**Gráfico temporal** que muestra la creación de espacios verdes a lo largo de los años.
+
+![grafico-temporal](grafico-temporal.png)
+
+**Gráficos de dispersión** que muestran la correlación entre algunos de los factores analizados.
+
+![grafico-dispersion](grafico-dispersion.png)
+
+**Gráfico de pastel o quesitos** que muestran la concentración de parques por distritos.
+
+![grafico-pastel](grafico-pastel.png)
