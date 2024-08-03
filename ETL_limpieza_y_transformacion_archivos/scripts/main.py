@@ -1,54 +1,5 @@
 import soporte
 
-print('_____________     FASE 1. EXPLORACIÓN INICIAL Y LIMPIEZA DE DATOS     __________________')
-
-print('________  APERTURA CSV, EXPLORACIÓN Y LIMPIEZA DATAFRAME ARBOLADO PARQUES DE BCN   __________')
-
-#Llamo a la función de leer el csv de los parques.
-df_parques = soporte.leer_csv('../data/input_data/2021_4T_OD_Arbrat_Parcs_BCN.csv')
-df_parques
-print('Las 5 primeras filas del DataFrame del ARBOLADO DE LOS PARQUES DE BCN son:\n')
-print(df_parques.head())
-print('.....................................................')
-
-#Llamo a la función para ver la info del csv de los parques.
-print('La INFORMACIÓN del DataFrame del ARBOLADO DE LOS PARQUES DE BCN es:\n')
-soporte.info_df(df_parques)
-print('.....................................................')
-
-#LLamo a la función para borrar columnas.
-soporte.borrar_columnas(df_parques)
-
-#Llamo a la función para eliminar las columnas que sé que no voy a utilizar.
-print('Las COLUMNAS del DataFrame del ARBOLADO DE LOS PARQUES DE BCN son:\n')
-print(soporte.ver_columnas(df_parques))
-print('.....................................................')
-
-#Llamo a la función para normalizar los valores de todas las columnas.
-soporte.normalizar_y_renombrar(df_parques)
-
-print('____________________________      GESTIÓN NULOS      _______________________________')
-
-#Llamo a la función para ver porcentaje nulos categóricos
-print('Las columnas con NULOS CATEGÓRICOS son:\n')
-soporte.nulos_categoricos(df_parques)
-print('.....................................................')
-
-#Llamo a la función para ver cómo se distribuyen los valores en esas columnas con nulos categóricos.
-soporte.distribucion_categorias_con_nulos(df_parques)
-
-#Llamo a la función para imputar a la categoría desconocido los nulos categóricos.
-soporte.imputacion_nulos_categoricos(df_parques)
-
-#Llamo a la función para ver las cinco primeras filas del DF.
-print(soporte.primeras_filas(df_parques))
-print('.....................................................\n')
-
-#Llamo a la función para guardar el DF como un archivo .csv limpio.
-soporte.guardar_df(df_parques, 'parques_barcelona')
-
-print('__________________________________________________________________________________________')
-
 print('________  APERTURA CSV, EXPLORACIÓN Y LIMPIEZA DATAFRAME DENSIDAD DE POBLACIÓN BCN   __________')
 
 #Llamo a la función de leer el csv de la densidad de población.
