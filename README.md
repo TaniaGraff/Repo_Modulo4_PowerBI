@@ -72,7 +72,7 @@ Revisa la carpeta `output_data` para asegurarte de que los archivos procesados s
 
 ### **Preguntas Clave:**
 
-1. Identificación de la Ubicación:
+Para la identificación de la Ubicación:
 - ¿Cuántos espacios verdes tiene Barcelona?
 - ¿Cómo se categorízan los espacios verdes de Barcelona?
 - ¿En qué distritos se concentran los espacios verdes de Barcelona?
@@ -80,9 +80,6 @@ Revisa la carpeta `output_data` para asegurarte de que los archivos procesados s
 - ¿Los distritos que más parques concentran son los que tienen una mayor renta per capita?
 - ¿Los distritos que más parques concentran son los que más población concentran?
 - ¿Los distritos que más parques concentran son los que más contaminación acumulan?
-
-2. Recomendaciones
-Clasificar los distritos en función de las cuatro variables analizadas con tal de encontrar la mejor localización para ubicar el próximo parque urbano de la ciudad:
 - ¿Son los parques la tipología de espacio verde que más predomina en Barcelona?
 - ¿En qué distritos se concentran?
 - ¿Hay una relación clara entre los espacios verdes y la densidad de población?
