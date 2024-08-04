@@ -99,7 +99,7 @@ Los dashboards resultantes están dirigidos a:
 
 ### **Visualizaciones realizadas en Power BI**
 
-El dashboard incluye varias visualizaciones clave para facilitar el análisis y la interpretación de los datos.
+Los dashboards incluyen varias visualizaciones clave para facilitar el análisis y la interpretación de los datos. Visualizaciones como:
 
 **Mapa de formas** para ordenar los distritos en función de cada variable analizada.
 
@@ -116,3 +116,5 @@ El dashboard incluye varias visualizaciones clave para facilitar el análisis y 
 **Gráfico de pastel o quesitos** que muestran la concentración de parques por distritos.
 
 ![grafico-pastel](grafico-pastel.png)
+
+Para ver el dashboard de Arbolando Barcelona, ejecutar en Power BI el archivo arbolando_barcelona.pbix
