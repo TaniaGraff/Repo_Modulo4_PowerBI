@@ -117,4 +117,4 @@ Los dashboards incluyen varias visualizaciones clave para facilitar el análisis
 
 ![grafico-pastel](grafico-pastel.png)
 
-Para ver el dashboard de Arbolando Barcelona, ejecutar en Power BI el archivo arbolando_barcelona.pbix
+Para ver el dashboard de Arbolando Barcelona, ejecutar en Power BI el archivo **arbolando_barcelona.pbix**
