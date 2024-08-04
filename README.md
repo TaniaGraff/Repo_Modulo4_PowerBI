@@ -1,18 +1,18 @@
 # Módulo 4
-## Arbolando Barcelona. Análisis de las zonas verdes de Barcelona para ubicar el próximo parque urbano de la ciudad.
-Tania Graff | Promo A Part Time
+## Arbolando Madrid | Arbolando Barcelona. Análisis de las zonas verdes de Madrid y Barcelona para ubicar el próximo parque urbano de la ciudad.
+*Equipo desarrollo:* Sandra Moreno y Tania Graff 
 
 *Herramienta visualización:* Power BI Desktop
 
-El Ministerio para la Transición Ecológica y Reto Demográfico encargó la realización de un análisis preliminar de los espacios verdes de Barcelona para ubicar el próximo parque urbano de la ciudad. Para determinar cuál es el distrito más idóneo, se han analizado 4 variables: los espacios verdes disponibles, la renta per capita, la densidad de población y la contaminación de cada distrito. Los siete datasets explorados, se han obtenido del Open Data facilitado por el Ayuntamiento de Barcelona [Open Data Ajuntament de Barcelona](https://opendata-ajuntament.barcelona.cat/es/).
+El Ministerio para la Transición Ecológica y Reto Demográfico encargó la realización de un análisis preliminar de los espacios verdes de Madrid y Barcelona para ubicar el próximo parque urbano de la ciudad. Para determinar cuál es el distrito más idóneo en cada ciudad, se han analizado 4 variables: los espacios verdes disponibles, la renta per capita, la densidad de población y la contaminación de cada distrito. 
 
-![imagen_portada_modulo](portada.png)
+![imagen_portada_modulo](portada2.png)
 
 ## **FASE 1: Exploración, Limpieza y Transformación el Conjunto de Datos**
 
-Se ha automatizado la primera fase del proceso de transformación y limpieza de datos para crear seis archivos .csv que permiten ordenar los diez distritos en los que se divide Barcelona en función de las 4 variables a analizar.
+Los seis datasets explorados para realizar el análisis de Barcelona, se han obtenido del Open Data facilitado por el Ayuntamiento de Barcelona [Open Data Ajuntament de Barcelona](https://opendata-ajuntament.barcelona.cat/es/). Se ha automatizado la primera fase del proceso de transformación y limpieza de datos de estos datasets, obteniendo seis archivos .csv que permiten ordenar los diez distritos en los que se divide la ciudad en función de las 4 variables a analizar.
 
-### **Estructura de archivos**
+### **Estructura de archivos Arbolando Barcelona**
 **Data**
 - Archivos .csv de entrada:
     - 2021_densitat.csv
@@ -54,7 +54,7 @@ Revisa la carpeta `output_data` para asegurarte de que los archivos procesados s
 
 ### **Objetivos**
 
-**1. Identificación de la Ubicación:** Seleccionar el mejor distrito para ubicar el próximo parque urbano de Barcelona en base al análisis de los siguientes factores.
+**1. Identificación de la Ubicación:** Seleccionar el mejor distrito para ubicar el próximo parque urbano de Madrid y Barcelona en base al análisis de los siguientes factores.
 
 **2. Análisis de Factores:** Evaluar cómo los distintos factores considerados en el análisis, influyen a la hora de ordenar los distritos: 
 
@@ -73,27 +73,27 @@ Revisa la carpeta `output_data` para asegurarte de que los archivos procesados s
 ### **Preguntas Clave:**
 
 Para la identificación de la ubicación:
-- ¿Cuántos espacios verdes tiene Barcelona?
-- ¿Cómo se categorízan los espacios verdes de Barcelona?
-- ¿En qué distritos se concentran los espacios verdes de Barcelona?
-- ¿En qué distritos se concentran los parques de Barcelona?
+- ¿Cuántos espacios verdes tiene Barcelona? ¿Y Madrid?
+- ¿Cómo se categorízan los espacios verdes de Barcelona? ¿Y los de Madrid?
+- ¿En qué distritos se concentran los espacios verdes de Barcelona? ¿Y en Madrid?
+- ¿En qué distritos se concentran los parques de Barcelona? ¿Y en Madrid?
 - ¿Los distritos que más parques concentran son los que tienen una mayor renta per capita?
 - ¿Los distritos que más parques concentran son los que más población concentran?
 - ¿Los distritos que más parques concentran son los que más contaminación acumulan?
-- ¿Son los parques la tipología de espacio verde más predominante en Barcelona?
+- ¿Son los parques la tipología de espacio verde más predominante en Barcelona? ¿Y en Madrid?
 - ¿Hay una relación clara entre los espacios verdes y la densidad de población?
 - ¿Hay una relación clara entre los parques y la densidad de población?
 - ¿Hay una relación clara entre los espacios verdes y la renta per capita?
 - ¿Hay una relación clara entre los parques y la renta per capita?
 - ¿Hay una relación clara entre los espacios verdes y los niveles de contaminación?
 
-Plantear alternativas a la creación de un parque urbano en caso de que su creación no fuera posible por la idiosincracia de la ciudad.
+Plantear alternativas a la creación de un parque urbano en caso de que su creación no fuera posible por la idiosincracia de cada ciudad.
 
 ## **FASE 3: Casos de Uso**
 ### **Público Objetivo del Dashboard**
-El dashboard está dirigido a:
+Los dashboards resultantes están dirigidos a:
 
-**Administración Pública** para que puedan determinar el mejor distrito para ubicar el próximo parque urbano de Barcelona, y dotar a la municipalidad del presupuesto necesario para ejecutar el proyecto.
+**Administración Pública** para que puedan determinar el mejor distrito para ubicar el próximo parque urbano de Madrid y Barcelona, y dotar a la municipalidad del presupuesto necesario para ejecutar el proyecto.
 
 **Asociaciones Vecinales** para que puedan presionar a las administraciones gubernamentales de la necesidad de crear un nuevo parque urbano en la ciudad.
 
