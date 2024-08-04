@@ -81,7 +81,6 @@ Para la identificación de la ubicación:
 - ¿Los distritos que más parques concentran son los que más población concentran?
 - ¿Los distritos que más parques concentran son los que más contaminación acumulan?
 - ¿Son los parques la tipología de espacio verde más predominante en Barcelona?
-- ¿En qué distritos se concentran?
 - ¿Hay una relación clara entre los espacios verdes y la densidad de población?
 - ¿Hay una relación clara entre los parques y la densidad de población?
 - ¿Hay una relación clara entre los espacios verdes y la renta per capita?
