@@ -4,7 +4,7 @@
 
 *Herramienta visualización:* Power BI Desktop
 
-El Ministerio para la Transición Ecológica y Reto Demográfico encargó la realización de un análisis preliminar de los espacios verdes de Madrid y Barcelona para ubicar el próximo parque urbano de la ciudad. Para determinar cuál es el distrito más idóneo en cada ciudad, se han analizado 4 variables: los espacios verdes disponibles, la renta per capita, la densidad de población y la contaminación de cada distrito. 
+El Ministerio para la Transición Ecológica y Reto Demográfico nos encargó la realización de un análisis preliminar de los espacios verdes de Madrid y Barcelona para ubicar el próximo parque urbano de la ciudad. Para determinar cuál es el distrito más idóneo en cada ciudad, se han analizado 4 variables: los espacios verdes disponibles, la renta per capita, la densidad de población y la contaminación de cada distrito. 
 
 ![imagen_portada_modulo](portada2.png)
 
@@ -96,3 +96,5 @@ Los dashboards incluyen varias visualizaciones clave para facilitar el análisis
 **Gráfico de pastel o quesitos** que muestran la concentración de parques por distritos.
 
 Para ver el dashboard de Arbolando Barcelona, ejecutar en Power BI el archivo **arbolando_barcelona.pbix**
+
+Para ver el dashboard de Arbolando Madrir, ejecutar en Power BI el archivo 
