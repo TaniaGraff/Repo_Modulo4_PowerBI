@@ -12,7 +12,7 @@ El Ministerio para la Transición Ecológica y Reto Demográfico nos encargó la
 
 Los seis datasets explorados para realizar el análisis de Barcelona, se han obtenido del Open Data facilitado por el Ayuntamiento de Barcelona [Open Data Ajuntament de Barcelona](https://opendata-ajuntament.barcelona.cat/es/). Se ha automatizado la primera fase del proceso de transformación y limpieza de datos de estos datasets, obteniendo seis archivos .csv que permiten ordenar los diez distritos en los que se divide la ciudad en función de las 4 variables a analizar.
 
-Los seis datasets explorados para realizar el análisis de Madrid, se han obtenido desde el Ayuntamiento de Madrid ( https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=79c6adbb460dd510VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default) y desde los datos abiertos de la Comunidad de Madrid (https://datos.comunidad.madrid/catalogo/group/medio-ambiente?res_format=CSV)
+Los seis datasets explorados para realizar el análisis de Madrid, se han obtenido desde el Ayuntamiento de Madrid [Data Ayuntamiento de Madrid](https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=79c6adbb460dd510VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default) y desde los datos abiertos de la Comunidad de Madrid [Data Comunidad de Madrid](https://datos.comunidad.madrid/catalogo/group/medio-ambiente?res_format=CSV)
 
    
 ### **Ejecución de la Limpieza y Transformación de Datos**
