@@ -12,23 +12,9 @@ El Ministerio para la Transición Ecológica y Reto Demográfico encargó la rea
 
 Los seis datasets explorados para realizar el análisis de Barcelona, se han obtenido del Open Data facilitado por el Ayuntamiento de Barcelona [Open Data Ajuntament de Barcelona](https://opendata-ajuntament.barcelona.cat/es/). Se ha automatizado la primera fase del proceso de transformación y limpieza de datos de estos datasets, obteniendo seis archivos .csv que permiten ordenar los diez distritos en los que se divide la ciudad en función de las 4 variables a analizar.
 
-### **Estructura de archivos Arbolando Barcelona**
-**Data**
-- Archivos .csv de entrada:
-    - 2021_densitat.csv
-    - 2021_qualitat_aire_estacions.csv
-    - BarcelonaCiutat_Districtes.csv
-    - opendatabcn_cultura_parcs-i-jardins.csv
-    - qualitat_aire_contaminants.csv
-    - Renta_Per_Capita_Barris_Barcelona.csv 
-- Archivos .csv de salida:
-    - contaminacion_barcelona.csv
-    - contaminantes_barcelona.csv
-    - densidad_poblacion_barcelona.csv
-    - distritos_barcelona.csv
-    - parques_y_jardines_barcelona.csv
-    - renta_per_capita_barcelona.csv
+Los xx datasets explorados para realizar el análisis de Madrid, se han obtenido del 
 
+   
 ### **Ejecución de la Limpieza y Transformación de Datos**
 El proceso de limpieza y transformación de datos está automatizado mediante un script en Python. Sigue estos pasos para ejecutar el script:
 
@@ -103,18 +89,10 @@ Los dashboards incluyen varias visualizaciones clave para facilitar el análisis
 
 **Mapa de formas** para ordenar los distritos en función de cada variable analizada.
 
-![mapa-formas-distritos](mapa-formas-distritos.png)
-
 **Gráfico temporal** que muestra la creación de espacios verdes a lo largo de los años.
-
-![grafico-temporal](grafico-temporal.png)
 
 **Gráficos de dispersión** que muestran la correlación entre algunos de los factores analizados.
 
-![grafico-dispersion](grafico-dispersion.png)
-
 **Gráfico de pastel o quesitos** que muestran la concentración de parques por distritos.
-
-![grafico-pastel](grafico-pastel.png)
 
 Para ver el dashboard de Arbolando Barcelona, ejecutar en Power BI el archivo **arbolando_barcelona.pbix**
